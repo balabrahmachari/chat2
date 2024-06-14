@@ -1,0 +1,64 @@
+/* src/App.css */
+
+.App {
+    text-align: center;
+  }
+  
+  .chat-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .messages {
+    flex: 1;
+    overflow-y: scroll;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .message {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .input-container input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .input-container button {
+    padding: 10px 20px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .chat-container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .input-container {
+      flex-direction: column;
+    }
+  
+    .input-container input {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .input-container button {
+      width: 100%;
+    }
+  }
+  
